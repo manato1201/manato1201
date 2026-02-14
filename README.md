@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 - Skill
-<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=c,cs,cpp,md,raspberrypi" />
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=c,cpp,cs,md,raspberrypi" />
 
 - Tool
 <img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=github,visualstudio,vscode,rider,unity" /> 

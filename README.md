@@ -6,7 +6,7 @@
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
+
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
@@ -15,8 +15,15 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-![](https://raw.githubusercontent.com/manato1201/manato1201/output/github-contribution-grid-snake.svg)
+- Skill
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=c,cs,cpp,md,raspberrypi" />
 
+- Tool
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=github,visualstudio,vscode,rider,unity" /> 
+
+- Learning
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=cloudflare,opencv,sqlite,unreal" /> 
+  
 <p align="left">
   <a href="https://github.com/manato1201">
     <img height="20" src="https://komarev.com/ghpvc/?username=manato1201" />

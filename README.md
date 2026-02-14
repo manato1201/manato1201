@@ -13,9 +13,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
-
-  
+-->  
 <p align="left">
   <a href="https://github.com/manato1201">
     <img height="20" src="https://komarev.com/ghpvc/?username=manato1201" />
@@ -24,7 +22,6 @@ Here are some ideas to get you started:
     <img height="20" src="https://img.shields.io/github/followers/Keichan15?label=follow&logo=github&style=flat" />
   </a>  
 </p>
-
 
 
 ## Stats

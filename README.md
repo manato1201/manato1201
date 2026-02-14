@@ -15,14 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- Skill
-<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=c,cpp,cs,md,raspberrypi" />
-
-- Tool
-<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=github,visualstudio,vscode,rider,unity" /> 
-
-- Learning
-<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=cloudflare,opencv,sqlite,unreal" /> 
   
 <p align="left">
   <a href="https://github.com/manato1201">
@@ -34,7 +26,18 @@ Here are some ideas to get you started:
 </p>
 
 
+
 ## Stats
+
+- Skill
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=c,cpp,cs,md,raspberrypi" />
+
+- Tool
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=github,visualstudio,vscode,rider,unity" /> 
+
+- Learning
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=cloudflare,opencv,sqlite,unreal" /> 
+
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=manato1201&theme=gruvbox)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=manato1201&theme=gruvbox)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=manato1201&theme=gruvbox)

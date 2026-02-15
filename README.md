@@ -28,13 +28,13 @@ Here are some ideas to get you started:
 
 ## Stats
 
-- Skill
+- ## Skill
 <img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=c,cpp,cs,md,raspberrypi" />
 
-- Tool
+- ## Tool
 <img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=github,visualstudio,vscode,rider,unity" /> 
 
-- Learning
+- ## Learning
 <img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=cloudflare,opencv,unreal" /> 
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=manato1201&theme=gruvbox)

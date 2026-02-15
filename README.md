@@ -35,7 +35,7 @@ Here are some ideas to get you started:
 <img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=github,visualstudio,vscode,rider,unity" /> 
 
 - Learning
-<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=cloudflare,opencv,sqlite,unreal" /> 
+<img alt="language" src="https://skillicons.dev/icons?theme=dark&perline=10&i=cloudflare,opencv,unreal" /> 
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=manato1201&theme=gruvbox)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=manato1201&theme=gruvbox)

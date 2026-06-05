@@ -6,9 +6,9 @@
 ## [CADGPUInferenceModeling](https://manato1201.github.io/CADGPUInferenceModeling/)
 
 ## ゲーム作品
-## [JunkShooting](https://manato1201.github.io/JunkShooting/)
-## [AdvancedVAT](https://manato1201.github.io/AdvancedVAT/)
-## [piece-peace](https://manato1201.github.io/piece-peace/)
+## [JunkShooting](https://github.com/manato1201/JunkShooting)
+## [AdvancedVAT](https://github.com/manato1201/AdvancedVAT)
+## [piece-peace](https://github.com/manato1201/piece-peace)
 
 
 <!--

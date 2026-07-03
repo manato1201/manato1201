@@ -57,19 +57,19 @@ Here are some ideas to get you started:
 
 # 松浦真聖 学習・制作ロードマップ
 
-> 作成日: 2026-07-03
+> 作成日: 2026-07-03(最終更新)
 > 構成は [STUスキルセット学習ロードマップ](https://www.stu-inc.com/uploads/stu_roadmap_5374985edc.png) のスタイル(カテゴリ別スキルツリー+バッジ)を踏襲。
-> **中身は自分の実績から構成。**
+> **中身は自分の実績(`D:\個人\高校実習` → `D:\大学` → `GameDevelopment`)のみから構成。**
 
-## バッジの説明
+## バッジの説明(全図共通の凡例)
 
 | バッジ | 色 | 意味 |
 |---|---|---|
-| 🟢 | 濃緑 + 白文字 | **習得済み** — 実績・成果物あり |
-| 🟡 | 濃橙 + 黒文字 | **復習すべき** — 経験はあるが体系化・言語化が必要 |
-| 🔵 | 濃青 + 白文字 | **今後学ぶ** — 自分の路線の延長で必要になる |
-| 🟣 | 濃紫 + 白文字 | **応用・発展** — 既存スキルを掛け合わせて到達できる領域 |
-| ⬛ | スレート + 白文字 | カテゴリ見出し(分類ノード) |
+| 🟢 | 濃緑背景 + 白文字 | **習得済み** — 実績・成果物あり |
+| 🟡 | 濃橙背景 + 黒文字 | **復習すべき** — 経験はあるが体系化・言語化が必要 |
+| 🔵 | 濃青背景 + 白文字 | **今後学ぶ** — 自分の路線の延長で必要になる |
+| 🟣 | 濃紫背景 + 白文字 | **応用・発展** — 既存スキルを掛け合わせて到達できる領域 |
+| ⬛ | スレート背景 + 白文字 | カテゴリ見出し(分類ノード、バッジなし) |
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -85,19 +85,22 @@ flowchart LR
 
 ## 全体マップ(STUの「緑の道」に相当)
 
+> 🕐 **時期:** 高校(2020-2023) → 大学1〜4年(2023-2026・現在)の全体像
+
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart TB
     S([高校 2020-2023]) ==> C1
-    C1[基本 / 開発環境] ==> C2[プログラミング言語]
-    C2 ==> C3[ゲーム制作]
-    C3 ==> C4[CG数学・物理・レンダリング]
-    C4 ==> C5[シミュレーション・流体]
-    C5 ==> C6[DCCツール・アート]
-    C6 ==> C7[AI・LLM・研究基盤]
-    C7 ==> C8[ネットワーク・Web]
-    C8 ==> C9[企画・チーム制作]
-    C9 ==> G([現在: 大学4年 卒研+就活 2026])
+    C1[1. 基本 / 開発環境] ==> C2[2. プログラミング言語]
+    C2 ==> C3[3. ハードウェア基礎]
+    C3 ==> C4[4. ゲーム制作]
+    C4 ==> C5[5. CG数学・物理・レンダリング]
+    C5 ==> C6[6. シミュレーション・流体]
+    C6 ==> C7[7. DCCツール・アート]
+    C7 ==> C8[8. AI・LLM・研究基盤]
+    C8 ==> C9[9. ネットワーク・Web]
+    C9 ==> C10[10. 企画・チーム制作]
+    C10 ==> G([現在: 大学4年 卒研+就活 2026])
     G -.-> F([今後の道筋 → 章末])
 
     style S fill:#455a64,stroke:#263238,color:#ffffff,font-weight:bold
@@ -108,6 +111,9 @@ flowchart TB
 ---
 
 ## 1. 基本 / 開発環境
+
+> 🕐 **時期:** 高校(2020-2023)で基礎ツール操作を習得 → 大学〜現在まで継続的に更新
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展(詳細は冒頭バッジ表を参照)
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -140,6 +146,9 @@ flowchart LR
 ---
 
 ## 2. プログラミング言語
+
+> 🕐 **時期:** 高校C#(2020-2023) → 大学1〜4年でC/C++/Python/JS/シェーダーへ拡大(2023-2026)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -176,7 +185,42 @@ flowchart LR
 
 ---
 
-## 3. ゲーム制作
+## 3. ハードウェア基礎
+
+> 🕐 **時期:** 高校 工業実習・情報技術実習(2021-2023) → 大学1年 電子情報工学概論(2023) → 大学3年 ゲームハード概論(2025)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
+
+```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
+flowchart LR
+    RPI[組込み実習] --> RP1[🟢 Raspberry Pi GPIO制御<br>高校 工業実習]:::done
+    RPI --> RP2[🟢 Raspbian環境構築<br>高校 情報技術実習]:::done
+    RP2 --> RP3[🟡 Linuxコマンド運用の再確認<br>WSL2運用と接続して体系化]:::review
+
+    EE[電子情報工学] --> EE1[🟢 電子情報工学概論<br>大学1年前期 全14回]:::done
+    EE1 --> EE2[🟡 論理回路・CPU基礎の再整理<br>低レイヤー理解の土台]:::review
+
+    GH[ゲームハード概論] --> GH1[🟢 ハードウェア史<br>コンピュータ基礎〜歴代機]:::done
+    GH --> GH2[🟢 映像/音源出力の仕組み<br>特殊映像出力・デジタル音源]:::done
+    GH --> GH3[🟢 プラットフォーム知識<br>入出力装置・アカウント・規約]:::done
+
+    RP1 --> F1[🔵 組込み制御の再開<br>Arduino/RaspberryPiでの実機制御]:::next
+    EE2 --> F2[🔵 コンピュータアーキテクチャ<br>低レイヤー最適化の理論的裏付け]:::next
+    F1 --> F3[🟣 エッジAI<br>Raspberry Pi上でのGNN/ML推論]:::adv
+    GH3 --> F4[🟣 実機ターゲット最適化<br>コンソール/モバイル知識を活かした軽量化]:::adv
+
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
+```
+
+---
+
+## 4. ゲーム制作
+
+> 🕐 **時期:** 大学1〜4年の授業(2023-2026)、個人開発・Steamリリースは2024年〜並行
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -195,8 +239,11 @@ flowchart LR
     FS --> F2[🟢 ShootingGame<br>+Vosk音声認識]:::done
     FS --> F3[🟢 Siv3D 3Dゲーム基盤]:::done
 
-    GAI[ゲームAI] --> GA1[🟢 ゲームAI I / II<br>授業+PracticeGameAI]:::done
-    GA1 --> GA2[🟣 LLM駆動NPC / 生成AIゲーム<br>AIGameJamの発展]:::adv
+    GAI[ゲームAI] --> GA1[🟢 ゲームAI I<br>基礎理論・意思決定]:::done
+    GAI --> GA2[🟢 ゲームAI II<br>経路探索・アクションAI・機械学習]:::done
+    GAI --> GA3[🟢 PracticeGameAI 実装演習]:::done
+    GA2 --> GA4[🟣 LLM駆動NPC / 生成AIゲーム<br>AIGameJamの発展]:::adv
+    GA2 --> GA5[🟣 ゲームAI×流体シミュレーション<br>学習型ソルバー知見の転用]:::adv
 
     JAM[実践] --> J1[🟢 ゲームジャム<br>SGJ2025 / AIGameJam]:::done
     JAM --> J2[🟢 チーム制作実習]:::done
@@ -210,7 +257,10 @@ flowchart LR
 
 ---
 
-## 4. CG数学・物理・レンダリング
+## 5. CG数学・物理・レンダリング
+
+> 🕐 **時期:** 大学1年 基礎数学(2023) → 大学3年 ゲームプログラミング2で集中的に実装(2025)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -242,7 +292,10 @@ flowchart LR
 
 ---
 
-## 5. シミュレーション・流体(最大の独自領域)
+## 6. シミュレーション・流体(最大の独自領域)
+
+> 🕐 **時期:** 個人R&D 2024年〜現在(大学の授業外で継続開発)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -273,7 +326,10 @@ flowchart LR
 
 ---
 
-## 6. DCCツール・アート
+## 7. DCCツール・アート
+
+> 🕐 **時期:** 高校 デジタル造形(C4D, 2023) → 個人制作で継続中(2023〜現在)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -299,7 +355,10 @@ flowchart LR
 
 ---
 
-## 7. AI・LLM・研究基盤
+## 8. AI・LLM・研究基盤
+
+> 🕐 **時期:** 個人R&D 2024年〜、大学4年 卒業研究として集大成(2025-2026)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -327,7 +386,10 @@ flowchart LR
 
 ---
 
-## 8. ネットワーク・Web
+## 9. ネットワーク・Web
+
+> 🕐 **時期:** 高校 チャットアプリ実習(2022-2023) → 個人API開発で継続(2024〜)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -341,7 +403,6 @@ flowchart LR
     DB --> D3[🟢 EntityFramework<br>高校課題研究]:::done
 
     WEB[Web制作] --> W1[🟢 静的サイト<br>web課題集〜miyagisite]:::done
-    WEB --> W2[🟡 ポートフォリオサイト<br>作品統合が未完]:::review
     W1 --> W3[🔵 モダンフロントエンド<br>フレームワーク1つ]:::next
     N1 --> W4[🟣 マルチプレイヤーゲーム通信<br>チャット経験×ゲーム制作]:::adv
 
@@ -353,7 +414,10 @@ flowchart LR
 
 ---
 
-## 9. 企画・チーム制作
+## 10. 企画・チーム制作
+
+> 🕐 **時期:** 大学1〜3年の授業・実習(2023-2025)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -361,13 +425,17 @@ flowchart LR
     PLAN[企画 / デザイン理論] --> P1[🟢 ゲーム構成論<br>メカニクス・バランス・世界観]:::done
     PLAN --> P2[🟢 企画発想法<br>マンダラ・チェックリスト法]:::done
     PLAN --> P3[🟢 コンテンツデザイン概論]:::done
+    PLAN --> P4[🟢 エンタテインメント設計]:::done
+    PLAN --> P5[🟢 インターフェースデザイン<br>UI/UX理論]:::done
 
     TEAM[チーム経験] --> T1[🟢 ゲーム制作技術総合実習]:::done
     TEAM --> T2[🟢 地域共創デザイン実習]:::done
     TEAM --> T3[🟢 ゲームジャム複数回]:::done
     TEAM --> T4[🟢 週報 / プロジェクト運営<br>3年制作応用実習]:::done
+    TEAM --> T5[🟢 コンテンツ制作マネジメント<br>2年前期]:::done
+    TEAM --> T6[🟢 チームワークとリーダーシップ<br>2年後期]:::done
 
-    BIZ[ビジネス知識] --> B1[🟢 知的財産権 / 企業経営<br>グローバル市場化戦略]:::done
+    BIZ[ビジネス知識] --> BZ1[🟢 知的財産権 / 企業経営<br>グローバル市場化戦略]:::done
 
     T4 --> F1[🟡 進行管理の言語化<br>就活で語れる形に棚卸し]:::review
     P1 --> F2[🟣 技術主導の企画<br>R&D成果を企画に変換する型]:::adv
@@ -382,7 +450,9 @@ flowchart LR
 
 ## 今後の道筋(復習 → 学習 → 応用・発展)
 
-自分の実績の延長線だけで組んだ優先順位。
+> 🕐 **時期:** 2026年後半(卒業まで) → 2027年(深化) → 2028年〜(応用)を想定
+> 🎨 **凡例:** 🟡復習(まず言語化) ｜ 🔵今後学ぶ(既存資産の延長) ｜ 🟣応用発展(掛け合わせ)
+> 自分の実績の延長線だけで組んだ優先順位。
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
@@ -391,7 +461,6 @@ flowchart TB
         Y1[クォータニオン・座標変換の言語化]:::review
         Y2[レンダリングパイプライン全段の整理<br>mini-rendererを教材化]:::review
         Y3[Unity描画・最適化知識の体系化<br>Steam開発の経験を棚卸し]:::review
-        Y4[ポートフォリオサイト完成<br>Web/Portfolioに全作品統合]:::review
     end
 
     subgraph NEXT["🔵 次に学ぶ(既存資産が伸びる方向)"]
@@ -426,14 +495,16 @@ flowchart TB
 
 ### 制作ロードマップ(成果物ベース)
 
+> 🕐 **時期:** 済(2024〜) → 2026年内(卒業) → 2027年(深化) → 2028年〜(応用作品)
+> 🎨 **凡例:** 🟢習得済み(完了) ｜ 🟡復習中の成果物 ｜ 🔵次の制作 ｜ 🟣到達点
+
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     G0[🟢 済: Steam<br>Qualial Nature]:::done --> G1[卒業研究完成<br>Houdini RAG MCP]:::review
-    G1 --> G2[ポートフォリオサイト<br>流体・RAG・Steamを統合掲載]:::review
-    G2 --> G3[GPU流体デモ<br>WASM版のCompute Shader移植]:::next
-    G3 --> G4[流体×エンジン統合<br>FluidKit→VAT→Niagara]:::next
-    G4 --> G5[リアルタイム流体作品<br>Steam第2作/技術デモリール]:::adv
+    G1 --> G2[GPU流体デモ<br>WASM版のCompute Shader移植]:::next
+    G2 --> G3[流体×エンジン統合<br>FluidKit→VAT→Niagara]:::next
+    G3 --> G4[リアルタイム流体作品<br>Steam第2作/技術デモリール]:::adv
 
     classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
     classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
@@ -445,8 +516,9 @@ flowchart LR
 
 ## まとめ
 
-- **一貫した軸**: 「動くものを作りながら低レイヤーへ潜る」— C#アプリ → ゲームフルスクラッチ → 3D数学 → 自作ソルバー/レンダラー → ML
-- **他人と被らない資産**: ①自作流体エンジン一式(SPH/FLIP/GNN/WASM) ②LLM/RAG/MCP基盤 ③Steamリリース実績。今後はこの3つの**掛け合わせ**(リアルタイム流体作品、ML for CG、制作支援エージェント)が最も費用対効果が高い
+- **一貫した軸**: 「動くものを作りながら低レイヤーへ潜る」— 高校: 組込み(Raspberry Pi)/アプリ(C#) → 大学: ゲームフルスクラッチ → 3D数学・ハードウェア理論 → 自作ソルバー/レンダラー → ML
+- **他人と被らない資産**: ①自作流体エンジン一式(SPH/FLIP/GNN/WASM) ②LLM/RAG/MCP基盤 ③Steamリリース実績 ④高校由来の組込み/ハードウェア知識(電子情報工学概論・ゲームハード概論と地続き)。今後はこれらの**掛け合わせ**(リアルタイム流体作品、ML for CG、エッジAI、制作支援エージェント)が最も費用対効果が高い
 - **弱点は「新技術」ではなく「言語化」**: 実装済みのものを説明できる形に整理することが、就活期の最優先タスク
+
 
 

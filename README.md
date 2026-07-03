@@ -59,25 +59,26 @@ Here are some ideas to get you started:
 
 > 作成日: 2026-07-03
 > 構成は [STUスキルセット学習ロードマップ](https://www.stu-inc.com/uploads/stu_roadmap_5374985edc.png) のスタイル(カテゴリ別スキルツリー+バッジ)を踏襲。
-> **中身は自分の実績(`D:\高校実習` → `D:\大学` → `GameDevelopment`)のみから構成。**
+> **中身は自分の実績から構成。**
 
 ## バッジの説明
 
-| バッジ | 意味 |
-|---|---|
-| 🟢 | **習得済み** — 実績・成果物あり |
-| 🟡 | **復習すべき** — 経験はあるが体系化・言語化が必要 |
-| 🔵 | **今後学ぶ** — 自分の路線の延長で必要になる |
-| 🟣 | **応用・発展** — 既存スキルを掛け合わせて到達できる領域 |
+| バッジ | 色 | 意味 |
+|---|---|---|
+| 🟢 | 濃緑 + 白文字 | **習得済み** — 実績・成果物あり |
+| 🟡 | 濃橙 + 黒文字 | **復習すべき** — 経験はあるが体系化・言語化が必要 |
+| 🔵 | 濃青 + 白文字 | **今後学ぶ** — 自分の路線の延長で必要になる |
+| 🟣 | 濃紫 + 白文字 | **応用・発展** — 既存スキルを掛け合わせて到達できる領域 |
+| ⬛ | スレート + 白文字 | カテゴリ見出し(分類ノード) |
 
 ```mermaid
-%% 凡例スタイル(各図共通)
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     L1[🟢 習得済み]:::done --- L2[🟡 復習]:::review --- L3[🔵 今後学ぶ]:::next --- L4[🟣 応用・発展]:::adv
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -85,6 +86,7 @@ flowchart LR
 ## 全体マップ(STUの「緑の道」に相当)
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart TB
     S([高校 2020-2023]) ==> C1
     C1[基本 / 開発環境] ==> C2[プログラミング言語]
@@ -97,6 +99,10 @@ flowchart TB
     C8 ==> C9[企画・チーム制作]
     C9 ==> G([現在: 大学4年 卒研+就活 2026])
     G -.-> F([今後の道筋 → 章末])
+
+    style S fill:#455a64,stroke:#263238,color:#ffffff,font-weight:bold
+    style G fill:#2e7d32,stroke:#1b5e20,color:#ffffff,font-weight:bold
+    style F fill:#6a1b9a,stroke:#4a148c,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -104,6 +110,7 @@ flowchart TB
 ## 1. 基本 / 開発環境
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     OS[OS / 環境] --> W[🟢 Windows 11<br>PowerShell]:::done
     OS --> WSL[🟢 WSL2 + systemd<br>卒研で構築]:::done
@@ -124,10 +131,10 @@ flowchart LR
     VC --> PF[🔵 Perforce等<br>大規模開発の構成管理]:::next
     DK --> IaC[🟣 CI/CDパイプライン設計<br>ビルド・テスト自動化]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -135,6 +142,7 @@ flowchart LR
 ## 2. プログラミング言語
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     CS[C#] --> CS1[🟢 WinForms / WPF<br>高校: チャット・OCR]:::done
     CS1 --> CS2[🟢 Unity C#<br>Steamリリース]:::done
@@ -160,10 +168,10 @@ flowchart LR
     SH1 --> SH2[🟡 Compute Shader<br>GPGPUの体系化]:::review
     SH2 --> SH3[🟣 WGSL / WebGPU<br>mini-renderer-gpuの発展]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -171,6 +179,7 @@ flowchart LR
 ## 3. ゲーム制作
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     ENG[ゲームエンジン] --> U[Unity]
     U --> U1[🟢 Built-in RP<br>VRChat案件]:::done
@@ -193,10 +202,10 @@ flowchart LR
     JAM --> J2[🟢 チーム制作実習]:::done
     U3 --> J3[🟣 Steam第2作<br>流体/GPU技術を主役に]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -204,6 +213,7 @@ flowchart LR
 ## 4. CG数学・物理・レンダリング
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     M[数学] --> M1[🟢 行列 / ベクトル<br>2D行列演算〜localSpace]:::done
     M --> M2[🟡 クォータニオン<br>使えるが言語化が課題]:::review
@@ -224,10 +234,10 @@ flowchart LR
     R3 --> R4[🟣 ニューラルレンダリング<br>NeRF / 3DGS ← GNN経験と接続]:::adv
     R1 --> R5[🔵 DirectX12 / Vulkan<br>生APIでの理解]:::next
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -235,6 +245,7 @@ flowchart LR
 ## 5. シミュレーション・流体(最大の独自領域)
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     SOLV[ソルバー実装] --> S1[🟢 SPH<br>空間ハッシュ近傍探索]:::done
     SOLV --> S2[🟢 FLIP ハイブリッド]:::done
@@ -254,10 +265,10 @@ flowchart LR
     S1 --> ADV1[🟣 MPM / 煙・炎など他分野<br>ソルバー横展開]:::adv
     RT2 --> ADV2[🟣 Steam第2作 / デモ作品<br>リアルタイム流体を売りに]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -265,6 +276,7 @@ flowchart LR
 ## 6. DCCツール・アート
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     DCC[3D DCC] --> B[🟢 Blender<br>MCP自動化・流体ビューア]:::done
     DCC --> H[🟢 Houdini<br>HDA・卒研RAG対象]:::done
@@ -279,10 +291,10 @@ flowchart LR
     DCC --> X1[🟣 DCC間データ交換の設計<br>FBX / USD / Alembic]:::adv
     H2 --> X2[🟣 LLM×DCC自動化<br>卒研RAG MCPの発展形]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -290,6 +302,7 @@ flowchart LR
 ## 7. AI・LLM・研究基盤
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     RAG[RAG / 検索] --> R1[🟢 mcp-rag-server<br>ローカルRAG自作]:::done
     RAG --> R2[🟢 卒研: Houdini Help RAG<br>pgvector 7810ファイル]:::done
@@ -306,10 +319,10 @@ flowchart LR
     L1 --> F2[🟣 制作支援エージェント<br>DCC操作×RAG×MCPの統合]:::adv
     M1 --> F3[🟣 ML for CG<br>Neural Fluid → NeRF/3DGS]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -317,6 +330,7 @@ flowchart LR
 ## 8. ネットワーク・Web
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     NET[ネットワーク] --> N1[🟢 TCPソケット通信<br>高校チャットアプリ]:::done
     NET --> N2[🟢 HTTP / API設計<br>api.py / serve.py]:::done
@@ -331,10 +345,10 @@ flowchart LR
     W1 --> W3[🔵 モダンフロントエンド<br>フレームワーク1つ]:::next
     N1 --> W4[🟣 マルチプレイヤーゲーム通信<br>チャット経験×ゲーム制作]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -342,6 +356,7 @@ flowchart LR
 ## 9. 企画・チーム制作
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     PLAN[企画 / デザイン理論] --> P1[🟢 ゲーム構成論<br>メカニクス・バランス・世界観]:::done
     PLAN --> P2[🟢 企画発想法<br>マンダラ・チェックリスト法]:::done
@@ -357,10 +372,10 @@ flowchart LR
     T4 --> F1[🟡 進行管理の言語化<br>就活で語れる形に棚卸し]:::review
     P1 --> F2[🟣 技術主導の企画<br>R&D成果を企画に変換する型]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---
@@ -370,26 +385,27 @@ flowchart LR
 自分の実績の延長線だけで組んだ優先順位。
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart TB
     subgraph NOW["🟡 まず復習・言語化(卒研・就活と並行)"]
-        Y1[クォータニオン・座標変換の言語化]
-        Y2[レンダリングパイプライン全段の整理<br>mini-rendererを教材化]
-        Y3[Unity描画・最適化知識の体系化<br>Steam開発の経験を棚卸し]
-        Y4[ポートフォリオサイト完成<br>Web/Portfolioに全作品統合]
+        Y1[クォータニオン・座標変換の言語化]:::review
+        Y2[レンダリングパイプライン全段の整理<br>mini-rendererを教材化]:::review
+        Y3[Unity描画・最適化知識の体系化<br>Steam開発の経験を棚卸し]:::review
+        Y4[ポートフォリオサイト完成<br>Web/Portfolioに全作品統合]:::review
     end
 
     subgraph NEXT["🔵 次に学ぶ(既存資産が伸びる方向)"]
-        B1[GPU流体<br>Compute Shaderソルバー]
-        B2[パストレーシング自作<br>mini-renderer発展]
-        B3[VAT→Niagara/VFX Graph統合<br>UE再開]
-        B4[Houdini PDG / プロシージャル深化]
+        B1[GPU流体<br>Compute Shaderソルバー]:::next
+        B2[パストレーシング自作<br>mini-renderer発展]:::next
+        B3[VAT→Niagara/VFX Graph統合<br>UE再開]:::next
+        B4[Houdini PDG / プロシージャル深化]:::next
     end
 
     subgraph ADV["🟣 応用・発展(掛け合わせで独自領域へ)"]
-        P1[リアルタイム流体が主役の作品<br>Steam第2作 or 技術デモ]
-        P2[ML for CG<br>Neural Fluid→NeRF/3DGS]
-        P3[LLM×制作パイプライン<br>卒研RAG MCP→制作支援エージェント]
-        P4[マルチプレイヤー通信<br>チャット経験×ゲーム]
+        P1[リアルタイム流体が主役の作品<br>Steam第2作 or 技術デモ]:::adv
+        P2[ML for CG<br>Neural Fluid→NeRF/3DGS]:::adv
+        P3[LLM×制作パイプライン<br>卒研RAG MCP→制作支援エージェント]:::adv
+        P4[マルチプレイヤー通信<br>チャット経験×ゲーム]:::adv
     end
 
     Y2 --> B2
@@ -398,11 +414,20 @@ flowchart TB
     B2 --> P2
     B3 --> P1
     B4 --> P3
+
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
+    style NOW fill:#263238,stroke:#f9a825,stroke-width:2px,color:#ffffff
+    style NEXT fill:#263238,stroke:#1565c0,stroke-width:2px,color:#ffffff
+    style ADV fill:#263238,stroke:#6a1b9a,stroke-width:2px,color:#ffffff
 ```
 
 ### 制作ロードマップ(成果物ベース)
 
 ```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     G0[🟢 済: Steam<br>Qualial Nature]:::done --> G1[卒業研究完成<br>Houdini RAG MCP]:::review
     G1 --> G2[ポートフォリオサイト<br>流体・RAG・Steamを統合掲載]:::review
@@ -410,10 +435,10 @@ flowchart LR
     G3 --> G4[流体×エンジン統合<br>FluidKit→VAT→Niagara]:::next
     G4 --> G5[リアルタイム流体作品<br>Steam第2作/技術デモリール]:::adv
 
-    classDef done fill:#c8e6c9,stroke:#2e7d32
-    classDef review fill:#fff3c4,stroke:#f9a825
-    classDef next fill:#bbdefb,stroke:#1565c0
-    classDef adv fill:#e1bee7,stroke:#6a1b9a
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
 ```
 
 ---

@@ -55,190 +55,373 @@ Here are some ideas to get you started:
 ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=manato1201&theme=gruvbox&utcOffset=9)
 
 
-
-# 学習・制作ロードマップ
+# 松浦真聖 学習・制作ロードマップ
 
 > 作成日: 2026-07-03
-> 参照: [STUで求められるスキルセット 学習ロードマップ (2021年10月改定)](https://www.stu-inc.com/uploads/stu_roadmap_5374985edc.png)
-> 調査対象: `D:\大学` / `D:\個人\高校実習` / `C:\Users\matuu\Desktop\GameDevelopment`
+> 構成は [STUスキルセット学習ロードマップ](https://www.stu-inc.com/uploads/stu_roadmap_5374985edc.png) のスタイル(カテゴリ別スキルツリー+バッジ)を踏襲。
+> **中身は自分の実績(`D:\高校実習` → `D:\大学` → `GameDevelopment`)のみから構成。**
 
----
+## バッジの説明
 
-## 1. 現在地
-
-- **東京国際工科専門職大学 4年**(2026年7月)— 卒業研究(Houdini Help RAG MCP)・就活期
-- 目指す方向性: **テクニカルアーティスト / CGエンジニア / グラフィックスプログラマー**(STUロードマップ準拠)
-- 既に **Steam でゲームをリリース済み**(Qualial Nature)。個人開発の深度は学生水準を大きく超えている
-
----
-
-## 2. これまでの歩み(実績タイムライン)
+| バッジ | 意味 |
+|---|---|
+| 🟢 | **習得済み** — 実績・成果物あり |
+| 🟡 | **復習すべき** — 経験はあるが体系化・言語化が必要 |
+| 🔵 | **今後学ぶ** — 自分の路線の延長で必要になる |
+| 🟣 | **応用・発展** — 既存スキルを掛け合わせて到達できる領域 |
 
 ```mermaid
-timeline
-    title 学習・制作の歩み
-    section 高校(〜2023.3)
-        情報系実習 : C# WinForms/WPF : TCPチャットアプリ(Client/Server) : SQLite
-        課題研究 : OCR文字認識(WPF/UWP検証×3) : Web課題集(HTML/CSS/JS)
-        校外 : 日立東日本ソリューションズ クラフトマン実習
-    section 大学1年(2023)
-        理論 : ゲーム構成論(ゲームデザイン理論) : 企画発想法 : コンテンツデザイン概論
-        実装 : C言語基礎(フレームバッファ・2D行列演算)
-        DCC : Cinema 4D(キャラクターアニメーション)
-    section 大学2年(2024)
-        C++ : ゲームアルゴリズム(DotEat・3DCG)
-        ゲーム制作 : GP1(Tennis/Race/Effect) : ShootingGame+Vosk音声認識
-        チーム : ゲーム制作技術総合実習 : 地域共創デザイン実習
-    section 大学3年(2025)
-        3D数学/物理 : Siv3Dでスケルタルアニメ・IK・スキニング : OBB/カプセル衝突・剛体 : モーションブレンド・パーティクル・ビルボード
-        AI : ゲームAI I/II
-        教養 : ゲームハード概論・知財・経営
-    section 個人開発(2024〜現在)
-        Unity : Steamリリース「Qualial Nature」 : HDRPブラックホール : VRChat UdonSharp(VRCEffectFrameWork) : AdvancedVAT
-        グラフィックスR&D : 流体エンジン(SPH/FLIP/Stable Fluids) : Neural Fluid(GNN 1.13Mパラメータ) : WASMリアルタイムSPH : mini-renderer(GPU)
-        AI基盤 : mcp-rag-server : Research-Collector : CAD GPU推論(TripoSR)
-        アート : ClipStudioイラスト : Aseprite : Blender/Houdini
-    section 大学4年(2026・現在)
-        卒業研究 : Houdini RAG MCP(pgvector+Docker+WSL2)
-        就活 : ポートフォリオ整備
+%% 凡例スタイル(各図共通)
+flowchart LR
+    L1[🟢 習得済み]:::done --- L2[🟡 復習]:::review --- L3[🔵 今後学ぶ]:::next --- L4[🟣 応用・発展]:::adv
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
 ```
 
 ---
 
-## 3. スキル棚卸し × STUロードマップ ギャップ分析
-
-STUロードマップの必須(❤)・推奨(✅)項目に対する現状。
-
-### ✅ 習得済み(実績あり)
-
-| カテゴリ | スキル | 根拠となる実績 |
-|---|---|---|
-| 言語 | C# | 高校WPF〜Unity/UdonSharp まで5年以上 |
-| 言語 | C++ | ゲームアルゴリズム、Siv3D、WASM SPH(外部依存ゼロ実装) |
-| 言語 | Python | 流体ソルバー(numpy完全ベクトル化)、RAG、uv運用 |
-| 言語 | HTML/JS | 高校Web課題〜Three.jsビューア、ポートフォリオ |
-| CG数学 | 三角関数・行列・クォータニオン | Siv3D課題(IK・スキニング・OBB)で実践済み |
-| CG | 衝突判定・剛体・補間 | OBB/カプセル/RigidRect/Interpolation |
-| ゲームエンジン | Unity(Built-in/URP/HDRP) | Steamリリース、HDRP、VAT、VRChat SDK |
-| DCC | Blender / Houdini / C4D | fluid HDA、Blender MCP連携、C4D課題 |
-| バージョン管理 | Git / GitHub | 全個人リポジトリ、GitHub Actions(FluidKit) |
-| サーバー/仮想化 | WSL2 / Docker | 卒研(pgvector on Docker) |
-| データ | JSON / SQLite / PostgreSQL | 中間フォーマット運用、卒研DB |
-| ネットワーク | TCP/IP・HTTP | 高校チャットアプリ(ソケット)、APIサーバー |
-| **STU範囲外の強み** | LLM/RAG/MCP・GNN・音声認識 | mcp-rag-server、Neural Fluid、Vosk — **AI×TAの差別化要素** |
-
-### ⚠️ 復習・体系化が必要(触ってはいる)
-
-| スキル | 現状 | やること |
-|---|---|---|
-| レンダリング理論 | mini-rendererで着手済みだが体系化不足 | スキャンライン→レイトレ→パストレ→GIの理論を一気通貫で整理 |
-| シェーダー(HLSL) | Unityシェーダー経験あり | Compute Shader・SRP拡張まで踏み込む |
-| Unreal Engine | UnrealGameフォルダあり(浅い) | STU必須の Blueprint / Material / Niagara / コンテンツパイプライン |
-| 3D数学 | 授業で習得済み | クォータニオン・座標変換を「人に説明できる」レベルに再整理(就活対策) |
-| CI/CD・テスト | GitHub Actions一部使用 | pytest習慣化、ビルド自動化パイプライン |
-| ドキュメンテーション | README/講義資料は書ける | Doxygen/Sphinxなど生成系ツール |
-
-### ❌ 未着手(STU必須・推奨とのギャップ)
-
-| スキル | STU上の扱い | 優先度 |
-|---|---|---|
-| **Autodesk Maya + MEL/PyMEL/Python API** | 必須 | **高** — TA職の共通言語。Blender/Houdini経験があるので移行は速い |
-| **Perforce** | 必須 | 中 — 概念だけ先行学習(ワークスペース/ストリーム)。実務で習得可 |
-| USD / Alembic / FBX SDK | Scene Description | **高** — パイプラインTAの中核。Houdini Solarisから入ると効率的 |
-| ShotGrid(+API) | 必須 | 低 — 入社後でよい。概念(工程管理)だけ把握 |
-| Qt / PySide2 | 推奨 | **高** — DCCツール開発の標準。Python力があるので即戦力化しやすい |
-| OpenColorIO / ACES | カラーマネジメント | 中 — HDRP経験と接続すると理解が速い |
-| 文字エンコーディング | 必須 | 低 — Shift-JIS/UTF-8の実務知識を1日で整理 |
-| Vulkan / DirectX 12(生API) | Graphics API | 中 — mini-renderer-gpuの発展として |
-
----
-
-## 4. 今後の学習ロードマップ
+## 全体マップ(STUの「緑の道」に相当)
 
 ```mermaid
 flowchart TB
-    subgraph P1["Phase 1｜今〜卒業(2026後半〜2027.3) 就活直結・復習"]
-        direction TB
-        A1["卒業研究の完成<br>Houdini RAG MCP"]
-        A2["3D数学の再体系化<br>クォータニオン/座標変換を説明できるレベルに"]
-        A3["UE5基礎<br>Blueprint / Material / Niagara"]
-        A4["Maya基礎 + Python API<br>Blender経験からの移行"]
-        A5["ポートフォリオ統合<br>Steam作品+流体+RAGを1本のストーリーに"]
-    end
-
-    subgraph P2["Phase 2｜深化(2027) TAとしての武器づくり"]
-        direction TB
-        B1["PySide2/Qtツール開発<br>DCC連携ツールを1本制作"]
-        B2["USD/Alembicパイプライン<br>Houdini Solaris起点"]
-        B3["HLSL深化<br>Compute Shader / SRP拡張 / GPUパーティクル"]
-        B4["レンダリング理論の完走<br>パストレーサー自作(PBRT準拠)"]
-        B5["Perforce/ShotGrid概念<br>+ CI/CDパイプライン構築"]
-    end
-
-    subgraph P3["Phase 3｜応用・発展(2028〜) 差別化・研究"]
-        direction TB
-        C1["Neural Rendering / ML for CG<br>GNN流体の延長 → NeRF/3DGS"]
-        C2["流体エンジンのエンジン統合<br>VATエクスポート → Unity/UE(Niagara)"]
-        C3["Houdini PDG / パイプライン自動化<br>+ LLMエージェント統合(独自領域)"]
-        C4["WebGPU / Vulkan<br>mini-renderer-gpuの発展"]
-        C5["分散レンダリング / Deadline<br>OpenColorIO・ACES運用"]
-    end
-
-    A2 --> B4
-    A3 --> B3
-    A4 --> B1
-    B1 --> C3
-    B2 --> C3
-    B3 --> C2
-    B4 --> C1
-    B4 --> C4
+    S([高校 2020-2023]) ==> C1
+    C1[基本 / 開発環境] ==> C2[プログラミング言語]
+    C2 ==> C3[ゲーム制作]
+    C3 ==> C4[CG数学・物理・レンダリング]
+    C4 ==> C5[シミュレーション・流体]
+    C5 ==> C6[DCCツール・アート]
+    C6 ==> C7[AI・LLM・研究基盤]
+    C7 ==> C8[ネットワーク・Web]
+    C8 ==> C9[企画・チーム制作]
+    C9 ==> G([現在: 大学4年 卒研+就活 2026])
+    G -.-> F([今後の道筋 → 章末])
 ```
-
-### Phase 1 の優先順位(理由つき)
-
-1. **卒業研究** — 卒業要件。RAG×Houdiniは他の学生がやっていない領域なのでそのまま就活の主砲になる
-2. **3D数学の復習** — TA/グラフィックス職の面接頻出。実装経験(Siv3D課題)があるので「言語化」だけが課題
-3. **UE5(Blueprint/Material/Niagara)** — STU必須で唯一の大きな空白。Unity経験があるので概念マッピングで速習可能
-4. **Maya + Python API** — TA求人の必須要件筆頭。「Blenderはできます」だけだと選考で不利になりがち
-5. **ポートフォリオ** — Steamリリース・流体R&D・RAG基盤を「技術で制作を支えるTA」の物語に編集する
 
 ---
 
-## 5. 制作ロードマップ(ポートフォリオ強化)
+## 1. 基本 / 開発環境
 
 ```mermaid
 flowchart LR
-    G1["卒業制作<br>Houdini RAG MCP"] --> G2["TAツールリール<br>PySide製 DCC→Unity<br>自動インポートパイプライン"]
-    G2 --> G3["流体×エンジン統合デモ<br>FluidKit → VAT → Niagara/VFX Graph"]
-    G3 --> G4["自作パストレーサー<br>mini-renderer発展<br>PBR/GI対応"]
-    G4 --> G5["ポートフォリオサイト完成<br>Web/Portfolio に全作品統合"]
+    OS[OS / 環境] --> W[🟢 Windows 11<br>PowerShell]:::done
+    OS --> WSL[🟢 WSL2 + systemd<br>卒研で構築]:::done
+    OS --> DK[🟢 Docker<br>pgvector運用]:::done
 
-    style G1 fill:#f9d67a
-    style G5 fill:#8fd18f
+    IDE[エディタ / IDE] --> VS[🟢 Visual Studio<br>高校WPF〜Siv3D]:::done
+    IDE --> VSC[🟢 VSCode / Rider系]:::done
+
+    VC[バージョン管理] --> GIT[🟢 Git / GitHub]:::done
+    GIT --> GA[🟢 GitHub Actions<br>FluidKit CI]:::done
+    GIT --> GF[🟡 ブランチ戦略<br>チーム開発向け運用]:::review
+
+    PKG[パッケージ管理] --> UV[🟢 uv Python]:::done
+    PKG --> NG[🟢 NuGet / UPM]:::done
+
+    AI[AI開発環境] --> CC[🟢 Claude Code / MCP<br>Blender MCP連携]:::done
+
+    VC --> PF[🔵 Perforce等<br>大規模開発の構成管理]:::next
+    DK --> IaC[🟣 CI/CDパイプライン設計<br>ビルド・テスト自動化]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
 ```
-
-| 制作物 | 使う既存資産 | 証明できるスキル |
-|---|---|---|
-| TAツール(PySide) | mcp-rag-server のPython力 | ツール開発・パイプライン設計 |
-| 流体×Niagara統合 | FluidKit + AdvancedVAT | シミュレーション・VFX・エンジン間データ変換 |
-| 自作パストレーサー | mini-renderer / mini-renderer-gpu | レンダリング理論・C++/GPU |
-| LLM支援制作環境 | Houdini RAG MCP(卒研) | **独自領域: AI活用パイプライン** |
 
 ---
 
-## 6. 学習方針(STUロードマップ備考より)
+## 2. プログラミング言語
 
-- 項目名の暗記ではなく、**各項目を自分で掘り下げて初めて知識になる** — 幸いあなたは「作って学ぶ」型が既に確立している
-- 一見無関係な技術も間接的に業務で使われる — **RAG/LLM経験は現時点のSTUマップに無い将来価値**
-- トレンドは変わる。技術者である限り一生勉強 — 現在のペース(授業+個人R&D並走)を維持すれば十分戦える
+```mermaid
+flowchart LR
+    CS[C#] --> CS1[🟢 WinForms / WPF<br>高校: チャット・OCR]:::done
+    CS1 --> CS2[🟢 Unity C#<br>Steamリリース]:::done
+    CS2 --> CS3[🟢 UdonSharp<br>VRChat]:::done
+    CS2 --> CS4[🟡 非同期 / UniTask / ZString<br>パフォーマンス設計の体系化]:::review
 
-### 週次の目安
+    CPP[C / C++] --> CP1[🟢 C言語基礎<br>フレームバッファ・行列]:::done
+    CP1 --> CP2[🟢 ゲームアルゴリズム<br>DotEat・3DCG]:::done
+    CP2 --> CP3[🟢 Siv3D<br>3D数学課題群]:::done
+    CP2 --> CP4[🟢 WASM SPH<br>外部依存ゼロC++]:::done
+    CP4 --> CP5[🔵 モダンC++体系化<br>C++17/20・最適化]:::next
 
-| 枠 | 内容 |
-|---|---|
-| 最優先 | 卒業研究 + 就活(ポートフォリオ) |
-| 週2〜3h | Phase 1 の空白埋め(UE5 → Maya の順) |
-| 隙間時間 | 3D数学の言語化(ノート化・ブログ化すると面接対策と一石二鳥) |
+    PY[Python] --> PY1[🟢 numpy完全ベクトル化<br>流体ソルバー]:::done
+    PY --> PY2[🟢 PyTorch<br>GNN訓練 AMP]:::done
+    PY --> PY3[🟢 RAG / API開発]:::done
+    PY3 --> PY4[🔵 型注釈・テスト習慣化<br>pytest]:::next
 
+    WEBL[JS / Web系] --> JS1[🟢 HTML/CSS/JS<br>高校web課題集]:::done
+    JS1 --> JS2[🟢 Three.js<br>流体ビューア]:::done
+    JS2 --> JS3[🔵 TypeScript]:::next
+
+    SH[シェーダー] --> SH1[🟢 HLSL / ShaderLab<br>HDRPブラックホール等]:::done
+    SH1 --> SH2[🟡 Compute Shader<br>GPGPUの体系化]:::review
+    SH2 --> SH3[🟣 WGSL / WebGPU<br>mini-renderer-gpuの発展]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 3. ゲーム制作
+
+```mermaid
+flowchart LR
+    ENG[ゲームエンジン] --> U[Unity]
+    U --> U1[🟢 Built-in RP<br>VRChat案件]:::done
+    U --> U2[🟢 URP / HDRP<br>ブラックホール表現]:::done
+    U --> U3[🟢 Steamリリース<br>Qualial Nature]:::done
+    U --> U4[🟢 VAT<br>AdvancedVAT]:::done
+    U --> U5[🟡 SRP拡張 / RenderFeature<br>描画パイプライン自作]:::review
+    ENG --> UE[Unreal Engine]
+    UE --> UE1[🟡 UE基礎<br>UnrealGameで着手済]:::review
+    UE1 --> UE2[🔵 Niagara / Material<br>流体アセットの持ち込み先]:::next
+
+    FS[フルスクラッチ制作] --> F1[🟢 GP1: Tennis / Race / Effect]:::done
+    FS --> F2[🟢 ShootingGame<br>+Vosk音声認識]:::done
+    FS --> F3[🟢 Siv3D 3Dゲーム基盤]:::done
+
+    GAI[ゲームAI] --> GA1[🟢 ゲームAI I / II<br>授業+PracticeGameAI]:::done
+    GA1 --> GA2[🟣 LLM駆動NPC / 生成AIゲーム<br>AIGameJamの発展]:::adv
+
+    JAM[実践] --> J1[🟢 ゲームジャム<br>SGJ2025 / AIGameJam]:::done
+    JAM --> J2[🟢 チーム制作実習]:::done
+    U3 --> J3[🟣 Steam第2作<br>流体/GPU技術を主役に]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 4. CG数学・物理・レンダリング
+
+```mermaid
+flowchart LR
+    M[数学] --> M1[🟢 行列 / ベクトル<br>2D行列演算〜localSpace]:::done
+    M --> M2[🟡 クォータニオン<br>使えるが言語化が課題]:::review
+    M --> M3[🟢 補間<br>Interpolation課題]:::done
+
+    AN[アニメーション] --> A1[🟢 スケルタル / スキニング<br>Siv3D FBX]:::done
+    AN --> A2[🟢 IK<br>Ortho_bone / IK_Skin]:::done
+    AN --> A3[🟢 モーションブレンド]:::done
+
+    PH[物理 / 衝突] --> P1[🟢 OBB / カプセル衝突]:::done
+    PH --> P2[🟢 剛体 RigidRect]:::done
+
+    FX[エフェクト] --> E1[🟢 パーティクル / ビルボード]:::done
+
+    R[レンダリング] --> R1[🟢 mini-renderer<br>CPU / GPU]:::done
+    R1 --> R2[🟡 レンダリング理論の体系化<br>パイプライン全段を説明できるレベル]:::review
+    R2 --> R3[🔵 パストレーシング / GI<br>PBRT系の自作実装]:::next
+    R3 --> R4[🟣 ニューラルレンダリング<br>NeRF / 3DGS ← GNN経験と接続]:::adv
+    R1 --> R5[🔵 DirectX12 / Vulkan<br>生APIでの理解]:::next
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 5. シミュレーション・流体(最大の独自領域)
+
+```mermaid
+flowchart LR
+    SOLV[ソルバー実装] --> S1[🟢 SPH<br>空間ハッシュ近傍探索]:::done
+    SOLV --> S2[🟢 FLIP ハイブリッド]:::done
+    SOLV --> S3[🟢 Stable Fluids 格子法]:::done
+    SOLV --> S4[🟢 再現性保証<br>SHA-256状態ハッシュ]:::done
+
+    RT[リアルタイム化] --> RT1[🟢 WASM SPH<br>ブラウザ実行]:::done
+    RT1 --> RT2[🔵 GPU流体<br>Compute Shaderソルバー]:::next
+
+    NN[Neural Fluid] --> N1[🟢 GNN v1-v3<br>1.13Mパラメータ 訓練済]:::done
+    N1 --> N2[🟣 学習型ソルバーの実用化<br>推論高速化・蒸留]:::adv
+
+    PIPE[パイプライン] --> PP1[🟢 Blender連携<br>NPZ / MCP]:::done
+    PIPE --> PP2[🟢 Houdini HDA]:::done
+    PP1 --> PP3[🔵 エンジン統合<br>VAT → Niagara / VFX Graph]:::next
+
+    S1 --> ADV1[🟣 MPM / 煙・炎など他分野<br>ソルバー横展開]:::adv
+    RT2 --> ADV2[🟣 Steam第2作 / デモ作品<br>リアルタイム流体を売りに]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 6. DCCツール・アート
+
+```mermaid
+flowchart LR
+    DCC[3D DCC] --> B[🟢 Blender<br>MCP自動化・流体ビューア]:::done
+    DCC --> H[🟢 Houdini<br>HDA・卒研RAG対象]:::done
+    DCC --> C4[🟢 Cinema 4D<br>デジタル造形課題]:::done
+    H --> H2[🔵 PDG / プロシージャル深化<br>パイプライン自動化]:::next
+    B --> B2[🔵 ジオメトリノード]:::next
+
+    ART[2Dアート] --> I1[🟢 Clip Studio<br>イラスト多数]:::done
+    ART --> I2[🟢 Aseprite<br>ドット絵]:::done
+    ART --> I3[🟢 ゲーム素材制作<br>ひび割れ・血痕等]:::done
+
+    DCC --> X1[🟣 DCC間データ交換の設計<br>FBX / USD / Alembic]:::adv
+    H2 --> X2[🟣 LLM×DCC自動化<br>卒研RAG MCPの発展形]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 7. AI・LLM・研究基盤
+
+```mermaid
+flowchart LR
+    RAG[RAG / 検索] --> R1[🟢 mcp-rag-server<br>ローカルRAG自作]:::done
+    RAG --> R2[🟢 卒研: Houdini Help RAG<br>pgvector 7810ファイル]:::done
+    RAG --> R3[🟢 Research-Collector<br>NotebookLM連携]:::done
+
+    ML[機械学習] --> M1[🟢 GNN設計・訓練<br>AMP / CosineAnnealing]:::done
+    ML --> M2[🟢 3D生成推論<br>TripoSR CAD→3D]:::done
+    ML --> M3[🟢 音声認識組込み<br>Vosk]:::done
+
+    LLMAPI[LLM活用] --> L1[🟢 MCPサーバー開発]:::done
+    LLMAPI --> L2[🟢 Gemini Live API検証]:::done
+
+    R2 --> F1[🔵 評価・検索精度改善<br>卒研の完成度向上]:::next
+    L1 --> F2[🟣 制作支援エージェント<br>DCC操作×RAG×MCPの統合]:::adv
+    M1 --> F3[🟣 ML for CG<br>Neural Fluid → NeRF/3DGS]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 8. ネットワーク・Web
+
+```mermaid
+flowchart LR
+    NET[ネットワーク] --> N1[🟢 TCPソケット通信<br>高校チャットアプリ]:::done
+    NET --> N2[🟢 HTTP / API設計<br>api.py / serve.py]:::done
+    N2 --> N3[🟡 通信の体系知識<br>プロトコル・暗号化の整理]:::review
+
+    DB[データベース] --> D1[🟢 SQLite]:::done
+    DB --> D2[🟢 PostgreSQL + pgvector]:::done
+    DB --> D3[🟢 EntityFramework<br>高校課題研究]:::done
+
+    WEB[Web制作] --> W1[🟢 静的サイト<br>web課題集〜miyagisite]:::done
+    WEB --> W2[🟡 ポートフォリオサイト<br>作品統合が未完]:::review
+    W1 --> W3[🔵 モダンフロントエンド<br>フレームワーク1つ]:::next
+    N1 --> W4[🟣 マルチプレイヤーゲーム通信<br>チャット経験×ゲーム制作]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 9. 企画・チーム制作
+
+```mermaid
+flowchart LR
+    PLAN[企画 / デザイン理論] --> P1[🟢 ゲーム構成論<br>メカニクス・バランス・世界観]:::done
+    PLAN --> P2[🟢 企画発想法<br>マンダラ・チェックリスト法]:::done
+    PLAN --> P3[🟢 コンテンツデザイン概論]:::done
+
+    TEAM[チーム経験] --> T1[🟢 ゲーム制作技術総合実習]:::done
+    TEAM --> T2[🟢 地域共創デザイン実習]:::done
+    TEAM --> T3[🟢 ゲームジャム複数回]:::done
+    TEAM --> T4[🟢 週報 / プロジェクト運営<br>3年制作応用実習]:::done
+
+    BIZ[ビジネス知識] --> B1[🟢 知的財産権 / 企業経営<br>グローバル市場化戦略]:::done
+
+    T4 --> F1[🟡 進行管理の言語化<br>就活で語れる形に棚卸し]:::review
+    P1 --> F2[🟣 技術主導の企画<br>R&D成果を企画に変換する型]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## 今後の道筋(復習 → 学習 → 応用・発展)
+
+自分の実績の延長線だけで組んだ優先順位。
+
+```mermaid
+flowchart TB
+    subgraph NOW["🟡 まず復習・言語化(卒研・就活と並行)"]
+        Y1[クォータニオン・座標変換の言語化]
+        Y2[レンダリングパイプライン全段の整理<br>mini-rendererを教材化]
+        Y3[Unity描画・最適化知識の体系化<br>Steam開発の経験を棚卸し]
+        Y4[ポートフォリオサイト完成<br>Web/Portfolioに全作品統合]
+    end
+
+    subgraph NEXT["🔵 次に学ぶ(既存資産が伸びる方向)"]
+        B1[GPU流体<br>Compute Shaderソルバー]
+        B2[パストレーシング自作<br>mini-renderer発展]
+        B3[VAT→Niagara/VFX Graph統合<br>UE再開]
+        B4[Houdini PDG / プロシージャル深化]
+    end
+
+    subgraph ADV["🟣 応用・発展(掛け合わせで独自領域へ)"]
+        P1[リアルタイム流体が主役の作品<br>Steam第2作 or 技術デモ]
+        P2[ML for CG<br>Neural Fluid→NeRF/3DGS]
+        P3[LLM×制作パイプライン<br>卒研RAG MCP→制作支援エージェント]
+        P4[マルチプレイヤー通信<br>チャット経験×ゲーム]
+    end
+
+    Y2 --> B2
+    Y3 --> B1
+    B1 --> P1
+    B2 --> P2
+    B3 --> P1
+    B4 --> P3
+```
+
+### 制作ロードマップ(成果物ベース)
+
+```mermaid
+flowchart LR
+    G0[🟢 済: Steam<br>Qualial Nature]:::done --> G1[卒業研究完成<br>Houdini RAG MCP]:::review
+    G1 --> G2[ポートフォリオサイト<br>流体・RAG・Steamを統合掲載]:::review
+    G2 --> G3[GPU流体デモ<br>WASM版のCompute Shader移植]:::next
+    G3 --> G4[流体×エンジン統合<br>FluidKit→VAT→Niagara]:::next
+    G4 --> G5[リアルタイム流体作品<br>Steam第2作/技術デモリール]:::adv
+
+    classDef done fill:#c8e6c9,stroke:#2e7d32
+    classDef review fill:#fff3c4,stroke:#f9a825
+    classDef next fill:#bbdefb,stroke:#1565c0
+    classDef adv fill:#e1bee7,stroke:#6a1b9a
+```
+
+---
+
+## まとめ
+
+- **一貫した軸**: 「動くものを作りながら低レイヤーへ潜る」— C#アプリ → ゲームフルスクラッチ → 3D数学 → 自作ソルバー/レンダラー → ML
+- **他人と被らない資産**: ①自作流体エンジン一式(SPH/FLIP/GNN/WASM) ②LLM/RAG/MCP基盤 ③Steamリリース実績。今後はこの3つの**掛け合わせ**(リアルタイム流体作品、ML for CG、制作支援エージェント)が最も費用対効果が高い
+- **弱点は「新技術」ではなく「言語化」**: 実装済みのものを説明できる形に整理することが、就活期の最優先タスク
 
 

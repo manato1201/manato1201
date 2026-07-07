@@ -1,9 +1,17 @@
 ## HelloWorld
 
 # 主要制作物
+## 卒業研究
+## [RAGを用いた動的チュートリアル生成](https://github.com/manato1201/DevelopmentRAGEnvironment)
+
 ## 補助ツール
 ## [Research-Collector](https://manato1201.github.io/Research-Collector/)
 ## [CADGPUInferenceModeling](https://manato1201.github.io/CADGPUInferenceModeling/)
+
+## 学習成果物
+## [LearningFluidEngine](https://github.com/manato1201/LearningFluidEngine)
+## [LearningQuickDraw](https://github.com/manato1201/LearningQuickDraw)
+
 
 ## ゲーム作品
 ## [JunkShooting](https://github.com/manato1201/JunkShooting)

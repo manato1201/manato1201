@@ -15,6 +15,7 @@
 ## [AssetDataInsightSuite](https://github.com/manato1201/AssetDataInsightSuite)
 ## [VisualRegressionQATool](https://github.com/manato1201/VisualRegressionQATool)
 
+
 ## 学習成果物
 ## [LearningFluidEngine](https://github.com/manato1201/LearningFluidEngine)
 ## [LearningQuickDraw](https://github.com/manato1201/LearningQuickDraw)
@@ -422,7 +423,7 @@ flowchart LR
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     NET[ネットワーク] --> N1[🟢 TCPソケット通信<br>高校チャットアプリ]:::done
-    NET --> N2[🟢 HTTP / API設計<br>FastAPI / Axum(Rust)]:::done
+    NET --> N2["🟢 HTTP / API設計<br>FastAPI / Axum(Rust)"]:::done
     N2 --> N3[🟡 通信の体系知識<br>プロトコル・暗号化の整理]:::review
 
     DB[データベース] --> D1[🟢 SQLite]:::done

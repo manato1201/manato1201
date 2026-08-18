@@ -4,19 +4,30 @@
 ## 卒業研究
 ## [RAGを用いた動的チュートリアル生成](https://github.com/manato1201/DevelopmentRAGEnvironment)
 
+## アプリ・Web開発
+## [The-Algorithm-Illustrated](https://github.com/manato1201/The-Algorithm-Illustrated)
+## [LoreDesktopAndWebSystem](https://github.com/manato1201/LoreDesktopAndWebSystem)
+## [ColorEncyclopedia](https://github.com/manato1201/ColorEncyclopedia)
+
 ## 補助ツール
 ## [Research-Collector](https://manato1201.github.io/Research-Collector/)
 ## [CADGPUInferenceModeling](https://manato1201.github.io/CADGPUInferenceModeling/)
+## [AssetDataInsightSuite](https://github.com/manato1201/AssetDataInsightSuite)
+## [VisualRegressionQATool](https://github.com/manato1201/VisualRegressionQATool)
 
 ## 学習成果物
 ## [LearningFluidEngine](https://github.com/manato1201/LearningFluidEngine)
 ## [LearningQuickDraw](https://github.com/manato1201/LearningQuickDraw)
+## [LearningQt](https://github.com/manato1201/LearningQt)
+## [VLMAutoReplayTool](https://github.com/manato1201/VLMAutoReplayTool)
 
 
 ## ゲーム作品
 ## [JunkShooting](https://github.com/manato1201/JunkShooting)
 ## [AdvancedVAT](https://github.com/manato1201/AdvancedVAT)
 ## [piece-peace](https://github.com/manato1201/piece-peace)
+
+
 
 
 <!--
@@ -65,7 +76,7 @@ Here are some ideas to get you started:
 
 # 松浦真聖 学習・制作ロードマップ
 
-> 作成日: 2026-07-03(最終更新)
+> 作成日: 2026-07-03 / 更新: 2026-08-18
 > 構成は [STUスキルセット学習ロードマップ](https://www.stu-inc.com/uploads/stu_roadmap_5374985edc.png) のスタイル(カテゴリ別スキルツリー+バッジ)を踏襲。
 > **中身は自分の実績(`D:\個人\高校実習` → `D:\大学` → `GameDevelopment`)のみから構成。**
 
@@ -108,7 +119,8 @@ flowchart TB
     C7 ==> C8[8. AI・LLM・研究基盤]
     C8 ==> C9[9. ネットワーク・Web]
     C9 ==> C10[10. 企画・チーム制作]
-    C10 ==> G([現在: 大学4年 卒研+就活 2026])
+    C10 ==> C11[11. 開発支援ツール・パイプライン]
+    C11 ==> G([現在: 大学4年 卒業研究 2026])
     G -.-> F([今後の道筋 → 章末])
 
     style S fill:#455a64,stroke:#263238,color:#ffffff,font-weight:bold
@@ -155,7 +167,7 @@ flowchart LR
 
 ## 2. プログラミング言語
 
-> 🕐 **時期:** 高校C#(2020-2023) → 大学1〜4年でC/C++/Python/JS/シェーダーへ拡大(2023-2026)
+> 🕐 **時期:** 高校C#(2020-2023) → 大学1〜4年でC/C++/Python/JS/Rust/シェーダーへ拡大(2023-2026)
 > 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
@@ -179,7 +191,11 @@ flowchart LR
 
     WEBL[JS / Web系] --> JS1[🟢 HTML/CSS/JS<br>高校web課題集]:::done
     JS1 --> JS2[🟢 Three.js<br>流体ビューア]:::done
-    JS2 --> JS3[🔵 TypeScript]:::next
+    JS2 --> JS3[🟢 TypeScript<br>Next.jsアプリ複数]:::done
+    JS3 --> JS4[🟡 型設計・状態管理の体系化<br>汎用パターンの言語化]:::review
+
+    RS[Rust] --> RS1[🟢 Rust基礎<br>Axum APIバックエンド Lore]:::done
+    RS1 --> RS2[🔵 所有権・並行処理の体系化<br>実務レベルの言語化]:::next
 
     SH[シェーダー] --> SH1[🟢 HLSL / ShaderLab<br>HDRPブラックホール等]:::done
     SH1 --> SH2[🟡 Compute Shader<br>GPGPUの体系化]:::review
@@ -240,7 +256,7 @@ flowchart LR
     U --> U4[🟢 VAT<br>AdvancedVAT]:::done
     U --> U5[🟡 SRP拡張 / RenderFeature<br>描画パイプライン自作]:::review
     ENG --> UE[Unreal Engine]
-    UE --> UE1[🟡 UE基礎<br>UnrealGameで着手済]:::review
+    UE --> UE1[🟢 UE基礎<br>CGWORLD GALLERY応募作]:::done
     UE1 --> UE2[🔵 Niagara / Material<br>流体アセットの持ち込み先]:::next
 
     FS[フルスクラッチ制作] --> F1[🟢 GP1: Tennis / Race / Effect]:::done
@@ -250,12 +266,14 @@ flowchart LR
     GAI[ゲームAI] --> GA1[🟢 ゲームAI I<br>基礎理論・意思決定]:::done
     GAI --> GA2[🟢 ゲームAI II<br>経路探索・アクションAI・機械学習]:::done
     GAI --> GA3[🟢 PracticeGameAI 実装演習]:::done
+    GAI --> GA6[🟢 VLM自動プレイエージェント<br>VLMAutoReplayTool]:::done
     GA2 --> GA4[🟣 LLM駆動NPC / 生成AIゲーム<br>AIGameJamの発展]:::adv
     GA2 --> GA5[🟣 ゲームAI×流体シミュレーション<br>学習型ソルバー知見の転用]:::adv
 
     JAM[実践] --> J1[🟢 ゲームジャム<br>SGJ2025 / AIGameJam]:::done
     JAM --> J2[🟢 チーム制作実習]:::done
-    U3 --> J3[🟣 Steam第2作<br>流体/GPU技術を主役に]:::adv
+    JAM --> J3[🟡 CGWORLD GALLERY応募<br>UE+Houdiniエフェクト映像 締切8/23]:::review
+    U3 --> J4[🟣 Steam第2作<br>流体/GPU技術を主役に]:::adv
 
     classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
     classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
@@ -345,6 +363,7 @@ flowchart LR
     DCC[3D DCC] --> B[🟢 Blender<br>MCP自動化・流体ビューア]:::done
     DCC --> H[🟢 Houdini<br>HDA・卒研RAG対象]:::done
     DCC --> C4[🟢 Cinema 4D<br>デジタル造形課題]:::done
+    H --> H1[🟡 Houdiniエフェクト制作<br>CGWORLD GALLERY応募]:::review
     H --> H2[🔵 PDG / プロシージャル深化<br>パイプライン自動化]:::next
     B --> B2[🔵 ジオメトリノード]:::next
 
@@ -396,14 +415,14 @@ flowchart LR
 
 ## 9. ネットワーク・Web
 
-> 🕐 **時期:** 高校 チャットアプリ実習(2022-2023) → 個人API開発で継続(2024〜)
+> 🕐 **時期:** 高校 チャットアプリ実習(2022-2023) → 個人API開発で継続(2024〜) → Next.js/Rustアプリへ拡大(2026)
 > 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
 
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart LR
     NET[ネットワーク] --> N1[🟢 TCPソケット通信<br>高校チャットアプリ]:::done
-    NET --> N2[🟢 HTTP / API設計<br>api.py / serve.py]:::done
+    NET --> N2[🟢 HTTP / API設計<br>FastAPI / Axum(Rust)]:::done
     N2 --> N3[🟡 通信の体系知識<br>プロトコル・暗号化の整理]:::review
 
     DB[データベース] --> D1[🟢 SQLite]:::done
@@ -411,7 +430,9 @@ flowchart LR
     DB --> D3[🟢 EntityFramework<br>高校課題研究]:::done
 
     WEB[Web制作] --> W1[🟢 静的サイト<br>web課題集〜miyagisite]:::done
-    W1 --> W3[🔵 モダンフロントエンド<br>フレームワーク1つ]:::next
+    W1 --> W2[🟢 モダンフロントエンド<br>Next.js/TypeScript 複数アプリ]:::done
+    W2 --> W3[🔵 状態管理・テスト<br>フロントエンド設計の体系化]:::next
+    WEB --> W5[🟢 デスクトップGUI<br>Qt6/QML]:::done
     N1 --> W4[🟣 マルチプレイヤーゲーム通信<br>チャット経験×ゲーム制作]:::adv
 
     classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
@@ -445,8 +466,37 @@ flowchart LR
 
     BIZ[ビジネス知識] --> BZ1[🟢 知的財産権 / 企業経営<br>グローバル市場化戦略]:::done
 
-    T4 --> F1[🟡 進行管理の言語化<br>就活で語れる形に棚卸し]:::review
+    T4 --> F1[🟡 進行管理の言語化<br>チーム開発経験の棚卸し]:::review
     P1 --> F2[🟣 技術主導の企画<br>R&D成果を企画に変換する型]:::adv
+
+    classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
+    classDef next fill:#1565c0,stroke:#0d47a1,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef adv fill:#6a1b9a,stroke:#4a148c,stroke-width:2px,color:#ffffff,font-weight:bold
+```
+
+---
+
+## 11. 開発支援ツール・パイプライン基盤
+
+> 🕐 **時期:** 個人R&D 2026年8月〜(CEDEC講演に触発され集中的に着手)
+> 🎨 **凡例:** 🟢習得済み ｜ 🟡復習 ｜ 🔵今後学ぶ ｜ 🟣応用発展
+
+```mermaid
+%%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
+flowchart LR
+    QA[品質・回帰検証] --> QA1[🟢 VisualRegressionQATool<br>スクリーンショット差分・DB永続化]:::done
+    QA --> QA2[🟢 AssetDataInsightSuite<br>アセット品質の取込〜可視化パイプライン]:::done
+
+    ORCH[運用・監視] --> O1[🟢 ToolOrchestrationHub<br>ツール群のRegistry/死活監視/ダッシュボード]:::done
+
+    MW[ミドルウェア設計] --> MW1[🟡 ProfilingTool設計書]:::review
+    MW --> MW2[🟡 DynamicGIMiddleware設計書]:::review
+    MW --> MW3[🟡 SoundMiddleware設計書]:::review
+
+    QA1 --> F1[🔵 CI連携<br>PRごとの自動回帰チェック]:::next
+    O1 --> F2[🔵 監視対象ツールの実運用投入]:::next
+    MW1 --> F3[🟣 制作パイプライン全体の内製化<br>TA/ツールエンジニアとしての核]:::adv
 
     classDef done fill:#2e7d32,stroke:#1b5e20,stroke-width:2px,color:#ffffff,font-weight:bold
     classDef review fill:#f9a825,stroke:#e65100,stroke-width:2px,color:#000000,font-weight:bold
@@ -465,10 +515,11 @@ flowchart LR
 ```mermaid
 %%{init: {'themeVariables': {'primaryColor':'#37474f','primaryTextColor':'#ffffff','primaryBorderColor':'#263238','lineColor':'#78909c','fontSize':'16px'}}}%%
 flowchart TB
-    subgraph NOW["🟡 まず復習・言語化(卒研・就活と並行)"]
+    subgraph NOW["🟡 まず復習・言語化(卒業研究と並行)"]
         Y1[クォータニオン・座標変換の言語化]:::review
         Y2[レンダリングパイプライン全段の整理<br>mini-rendererを教材化]:::review
         Y3[Unity描画・最適化知識の体系化<br>Steam開発の経験を棚卸し]:::review
+        Y4[開発支援ツール群を設計書から実装へ<br>ProfilingTool/DynamicGIMiddleware/SoundMiddleware]:::review
     end
 
     subgraph NEXT["🔵 次に学ぶ(既存資産が伸びる方向)"]
@@ -525,8 +576,8 @@ flowchart LR
 ## まとめ
 
 - **一貫した軸**: 「動くものを作りながら低レイヤーへ潜る」— 高校: 組込み(Raspberry Pi)/アプリ(C#) → 大学: ゲームフルスクラッチ → 3D数学・ハードウェア理論 → 自作ソルバー/レンダラー → ML
-- **他人と被らない資産**: ①自作流体エンジン一式(SPH/FLIP/GNN/WASM) ②LLM/RAG/MCP基盤 ③Steamリリース実績 ④高校由来の組込み/ハードウェア知識(電子情報工学概論・ゲームハード概論と地続き)。今後はこれらの**掛け合わせ**(リアルタイム流体作品、ML for CG、エッジAI、制作支援エージェント)が最も費用対効果が高い
-- **弱点は「新技術」ではなく「言語化」**: 実装済みのものを説明できる形に整理することが、就活期の最優先タスク
+- **他人と被らない資産**: ①自作流体エンジン一式(SPH/FLIP/GNN/WASM) ②LLM/RAG/MCP基盤 ③Steamリリース実績 ④高校由来の組込み/ハードウェア知識(電子情報工学概論・ゲームハード概論と地続き) ⑤内製開発支援ツール群(QA自動化・アセット可視化・ツール監視基盤)。今後はこれらの**掛け合わせ**(リアルタイム流体作品、ML for CG、エッジAI、制作支援エージェント)が最も費用対効果が高い
+- **弱点は「新技術」ではなく「言語化」**: 実装済みのものを説明できる形に整理することが、当面の最優先タスク
 
 
 

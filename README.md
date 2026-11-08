@@ -90,6 +90,41 @@ Houdini の公式ドキュメントを Cloudflare に索引し、Houdini パネ�
 
 ![今後の道筋](assets/diagrams/roadmap.svg)
 
+## テクニカルアーティストとしてのスキル
+
+CEDEC 2021「テクニカルアーティスト スキルレーダーチャート」の 21 項目で自己評価しました(0〜5)。強いのはプログラミング・モーション(シミュレーション)・パイプライン、これから伸ばすのはセットアップとモデリングです。
+
+<img src="assets/ta-skill-radar.png" alt="Technical Artist Skill Radar。プログラミング4.0、モーション3.8、パイプライン3.6、2D3.2、VFX3.0、描画2.8、モデリング2.3、セットアップ1.5(いずれもカテゴリ平均、0〜5)" width="880" />
+
+<details>
+<summary>21 項目の評価と根拠</summary>
+
+| カテゴリ | 項目 | 評価 | 根拠 |
+|---|---|:-:|---|
+| モデリング | キャラ | 1.5 | Cinema 4D のキャラクターアニメ課題(高校)。キャラ制作の実績は少ない |
+| モデリング | 背景 | 2 | Unity HDRP の屋外シーン、UE の基礎的なレベル構築 |
+| モデリング | プロシージャル | 3.5 | Houdini HDA、MagicCircleGenerator、FluidKit → Houdini 連携 |
+| セットアップ | リグ | 2 | Siv3D で FBX のスケルタル・スキニング・IK を自前実装。DCC 上のリギング実務は少ない |
+| セットアップ | 補助骨 | 1 | スキニング/IK 課題の範囲のみ |
+| モーション | シミュレーション | 4.5 | 自作の流体エンジン一式(SPH / FLIP / Stable Fluids)、GNN Neural Fluid、WASM リアルタイム SPH |
+| モーション | テクニカルアニメーション | 3 | IK・モーションブレンド・スキニング(Siv3D)、VAT(AdvancedVAT) |
+| VFX | エフェクト | 3 | VRCEffectFrameWork、Siv3D のパーティクル。Niagara は学習中 |
+| VFX | エフェクトシェーダー | 3 | HLSL / ShaderLab での HDRP ブラックホール表現、VRChat 向けシェーダー |
+| 描画 | マテリアルシェーダー | 3 | HLSL / ShaderLab の自作、mini-renderer(CPU/GPU)のシェーディング実装 |
+| 描画 | ライティング | 2.5 | HDRP のライティング、mini-renderer の陰影計算。GI・パストレーシングは今後 |
+| パイプライン | サーバー管理 | 3.5 | WSL2 + systemd、Docker(pgvector)、GitHub Actions、Cloudflare Workers / Vercel |
+| パイプライン | 工程管理 | 2.5 | 授業での週報・運営、ToolOrchestrationHub による監視。Perforce / ShotGrid は未経験 |
+| パイプライン | データ管理 | 4 | SQLite / PostgreSQL + pgvector、RAG(Houdini ヘルプ 7810 ファイル)、AssetDataInsightSuite |
+| パイプライン | ゲームエンジン連携 | 3.5 | Unity での製品出荷(Steam「Qualial Nature」)、FluidKit → VAT → Niagara の連携設計 |
+| パイプライン | ツール間連携 | 4.5 | Blender MCP・Houdini RAG MCP・mcp-rag-server、Houdini パネル(PySide6 約 9,900 行) |
+| 2D | アート | 3 | Clip Studio のイラスト、Aseprite のドット絵 |
+| 2D | UI | 4 | Next.js / React / Qt6・QML で複数アプリ、UI 設計原則の文書化 |
+| 2D | アニメーション | 2.5 | CSS ステップアニメ、pixi.js によるアルゴリズム可視化 |
+| プログラミング | ツール開発 | 4.5 | Houdini PySide6 パネル、MCP サーバー、IDE 拡張、QA・アセット解析ツール群 |
+| プログラミング | ゲームエンジン開発 | 3.5 | mini-renderer(CPU/GPU)、Siv3D 3D ゲーム基盤、WASM SPH(外部依存ゼロの C++) |
+
+</details>
+
 ## 技術
 
 <img alt="skills" src="https://skillicons.dev/icons?theme=dark&perline=10&i=c,cpp,cs,py,ts,rust,nextjs,qt,cloudflare,vercel,docker,opencv,raspberrypi" />
